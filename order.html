@@ -1,0 +1,3978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="UMMU AFNAN Chicken - Quality live chickens available in Gombe, Nigeria. Order live broilers, layers, cockerels, local chickens and young chickens."
+  >
+
+  <meta
+    name="theme-color"
+    content="#7b241c"
+  >
+
+  <title>Order Live Chickens | UMMU AFNAN Chicken</title>
+
+  <style>
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: #f7f8f5;
+      color: #20251f;
+      line-height: 1.6;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    /* =========================================================
+       VARIABLES
+    ========================================================= */
+
+    :root {
+      --primary: #7b241c;
+      --primary-dark: #5f1914;
+      --primary-light: #f4e8e5;
+
+      --green: #172117;
+      --green-light: #eaf0e8;
+
+      --gold: #d69b3d;
+
+      --text: #20251f;
+      --muted: #697066;
+
+      --white: #ffffff;
+      --border: #e2e6df;
+
+      --shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07);
+
+      --radius: 20px;
+    }
+
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(255, 255, 255, 0.97);
+
+      border-bottom:
+        1px solid var(--border);
+
+      box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.06);
+
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      width: min(1200px, 92%);
+      min-height: 78px;
+
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+
+      gap: 12px;
+
+      flex-shrink: 0;
+    }
+
+    .logo {
+      width: 55px;
+      height: 55px;
+
+      object-fit: contain;
+
+      border-radius: 50%;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+
+      line-height: 1.05;
+    }
+
+    .brand-text strong {
+      font-size: 18px;
+      letter-spacing: 1px;
+
+      color: var(--green);
+    }
+
+    .brand-text small {
+      margin-top: 5px;
+
+      font-size: 11px;
+      letter-spacing: 3px;
+
+      color: var(--primary);
+
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+
+      color: #42483f;
+
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-order {
+      padding: 11px 18px;
+
+      border-radius: 30px;
+
+      background: var(--primary);
+
+      color: white !important;
+    }
+
+    .nav-order:hover {
+      background: var(--primary-dark) !important;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 470px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      position: relative;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          rgba(15, 25, 14, 0.78),
+          rgba(65, 20, 15, 0.72)
+        ),
+        url("photo.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-content {
+      width: min(850px, 92%);
+
+      padding: 70px 20px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+
+      padding: 9px 18px;
+
+      border:
+        1px solid rgba(255, 255, 255, 0.45);
+
+      border-radius: 50px;
+
+      background:
+        rgba(255, 255, 255, 0.09);
+
+      font-size: 13px;
+      font-weight: bold;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size:
+        clamp(38px, 6vw, 68px);
+
+      line-height: 1.05;
+
+      margin-bottom: 20px;
+
+      letter-spacing: -1px;
+    }
+
+    .hero h1 span {
+      color: #f1c27d;
+    }
+
+    .hero p {
+      max-width: 680px;
+
+      margin: auto;
+
+      font-size:
+        clamp(16px, 2vw, 20px);
+
+      color: #f5f5f5;
+    }
+
+    .hero-buttons {
+      margin-top: 30px;
+
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .hero-btn {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-width: 170px;
+
+      padding: 14px 22px;
+
+      border-radius: 12px;
+
+      font-weight: bold;
+
+      transition: 0.25s ease;
+    }
+
+    .hero-btn-primary {
+      background: white;
+      color: var(--primary);
+    }
+
+    .hero-btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-btn-secondary {
+      border:
+        1px solid rgba(255, 255, 255, 0.45);
+
+      background:
+        rgba(255, 255, 255, 0.08);
+
+      color: white;
+    }
+
+    .hero-btn-secondary:hover {
+      background:
+        rgba(255, 255, 255, 0.15);
+    }
+
+
+    /* =========================================================
+       GENERAL
+    ========================================================= */
+
+    .container {
+      width: min(1200px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+
+      margin-bottom: 40px;
+    }
+
+    .section-title small {
+      display: block;
+
+      color: var(--primary);
+
+      font-weight: bold;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 8px;
+    }
+
+    .section-title h2 {
+      font-size:
+        clamp(28px, 4vw, 42px);
+
+      color: #1c251b;
+
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 680px;
+
+      margin: auto;
+
+      color: var(--muted);
+    }
+
+
+    /* =========================================================
+       NOTICE
+    ========================================================= */
+
+    .info-box {
+      background: white;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 18px;
+
+      padding: 22px;
+
+      margin-bottom: 35px;
+
+      display: flex;
+      align-items: center;
+
+      gap: 18px;
+
+      box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.04);
+    }
+
+    .info-icon {
+      width: 58px;
+      height: 58px;
+
+      flex-shrink: 0;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--primary-light);
+
+      border-radius: 50%;
+
+      font-size: 27px;
+    }
+
+    .info-box strong {
+      display: block;
+
+      margin-bottom: 4px;
+
+      color: #1c251b;
+
+      font-size: 17px;
+    }
+
+    .info-box p {
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+
+    /* =========================================================
+       PRODUCTS GRID
+    ========================================================= */
+
+    .products-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 25px;
+
+      align-items: stretch;
+    }
+
+
+    /* =========================================================
+       PRODUCT CARD
+    ========================================================= */
+
+    .product-card {
+      background: white;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+
+      overflow: hidden;
+
+      box-shadow: var(--shadow);
+
+      display: flex;
+      flex-direction: column;
+
+      min-width: 0;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.10);
+    }
+
+
+    /* =========================================================
+       PRODUCT IMAGE
+    ========================================================= */
+
+    .product-image {
+      width: 100%;
+
+      height: 235px;
+
+      overflow: hidden;
+
+      background: #f1f2ef;
+
+      flex-shrink: 0;
+
+      position: relative;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      object-fit: cover;
+
+      object-position: center;
+
+      transition:
+        transform 0.4s ease;
+    }
+
+    .product-card:hover
+    .product-image img {
+      transform: scale(1.04);
+    }
+
+    .product-badge {
+      position: absolute;
+
+      top: 14px;
+      left: 14px;
+
+      padding: 6px 11px;
+
+      border-radius: 30px;
+
+      background: rgba(123, 36, 28, 0.94);
+
+      color: white;
+
+      font-size: 11px;
+
+      font-weight: bold;
+
+      letter-spacing: 0.5px;
+    }
+
+
+    /* =========================================================
+       PRODUCT CONTENT
+    ========================================================= */
+
+    .product-content {
+      padding: 22px;
+
+      display: flex;
+      flex-direction: column;
+
+      flex: 1;
+
+      background: white;
+    }
+
+    .product-content h3 {
+      margin: 0 0 9px;
+
+      font-size: 21px;
+
+      line-height: 1.3;
+
+      color: #111;
+    }
+
+    .product-description {
+      margin: 0 0 18px;
+
+      color: #666;
+
+      font-size: 14px;
+
+      line-height: 1.6;
+
+      min-height: 45px;
+    }
+
+
+    /* =========================================================
+       PRICE
+    ========================================================= */
+
+    .price {
+      margin-bottom: 18px;
+
+      font-size: 23px;
+
+      font-weight: 800;
+
+      color: var(--primary);
+    }
+
+    .price span {
+      font-size: 12px;
+
+      font-weight: 500;
+
+      color: #555;
+    }
+
+
+    /* =========================================================
+       QUANTITY
+    ========================================================= */
+
+    .quantity-box {
+      margin-top: auto;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 10px;
+
+      border:
+        1px solid #ddd;
+
+      border-radius: 12px;
+
+      padding: 7px;
+
+      background: #fafafa;
+    }
+
+    .quantity-box button {
+      width: 40px;
+      height: 40px;
+
+      border: none;
+
+      border-radius: 9px;
+
+      background: var(--primary);
+
+      color: white;
+
+      font-size: 23px;
+
+      font-weight: bold;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: 0.2s ease;
+    }
+
+    .quantity-box button:hover {
+      background: var(--primary-dark);
+
+      transform: scale(1.04);
+    }
+
+    .quantity {
+      min-width: 35px;
+
+      text-align: center;
+
+      font-size: 18px;
+
+      font-weight: 800;
+
+      color: #111;
+    }
+
+
+    /* =========================================================
+       ORDER AREA
+    ========================================================= */
+
+    .order-area {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.3fr)
+        minmax(320px, 0.8fr);
+
+      gap: 28px;
+
+      align-items: start;
+    }
+
+    .card {
+      background: white;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 20px;
+
+      padding: 28px;
+
+      box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      font-size: 23px;
+
+      margin-bottom: 20px;
+
+      color: #20291f;
+    }
+
+
+    /* =========================================================
+       CART
+    ========================================================= */
+
+    .cart-card {
+      position: sticky;
+
+      top: 100px;
+    }
+
+    .cart-empty {
+      text-align: center;
+
+      padding: 30px 10px;
+
+      color: #7b8178;
+    }
+
+    .cart-empty-icon {
+      font-size: 48px;
+
+      margin-bottom: 10px;
+    }
+
+    .cart-item {
+      display: grid;
+
+      grid-template-columns:
+        1fr auto;
+
+      gap: 15px;
+
+      padding: 15px 0;
+
+      border-bottom:
+        1px solid #eceee9;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .cart-item-name {
+      font-weight: 700;
+
+      color: #20291f;
+    }
+
+    .cart-item-details {
+      font-size: 13px;
+
+      color: #737970;
+
+      margin-top: 3px;
+    }
+
+    .cart-item-price {
+      font-weight: 800;
+
+      color: var(--primary);
+
+      white-space: nowrap;
+    }
+
+    .summary-row {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 15px;
+
+      padding: 10px 0;
+
+      color: #555d52;
+    }
+
+    .summary-row.total {
+      border-top:
+        2px solid #e5e8e1;
+
+      margin-top: 10px;
+
+      padding-top: 18px;
+
+      font-size: 21px;
+
+      font-weight: 800;
+
+      color: #1c251b;
+    }
+
+    .summary-row.total strong {
+      color: var(--primary);
+    }
+
+
+    /* =========================================================
+       FORM
+    ========================================================= */
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      margin-bottom: 7px;
+
+      color: #333a30;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+
+      padding: 13px 14px;
+
+      border:
+        1px solid #d9ded5;
+
+      border-radius: 11px;
+
+      outline: none;
+
+      background: white;
+
+      color: #222;
+
+      transition: 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(123, 36, 28, 0.08);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+
+      min-height: 105px;
+    }
+
+
+    /* =========================================================
+       RADIO OPTIONS
+    ========================================================= */
+
+    .radio-group {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 12px;
+    }
+
+    .radio-option {
+      border:
+        1px solid #dce1d8;
+
+      border-radius: 12px;
+
+      padding: 13px;
+
+      cursor: pointer;
+
+      transition: 0.2s ease;
+    }
+
+    .radio-option:hover {
+      border-color: var(--primary);
+
+      background: #fffaf9;
+    }
+
+    .radio-option input {
+      margin-right: 7px;
+
+      accent-color: var(--primary);
+    }
+
+    .radio-option label {
+      cursor: pointer;
+
+      font-weight: 600;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================================================
+       BUTTONS
+    ========================================================= */
+
+    .submit-btn {
+      width: 100%;
+
+      border: none;
+
+      padding: 16px 20px;
+
+      border-radius: 13px;
+
+      background: var(--primary);
+
+      color: white;
+
+      font-size: 16px;
+
+      font-weight: 800;
+
+      transition: 0.25s ease;
+
+      margin-top: 8px;
+    }
+
+    .submit-btn:hover {
+      background: var(--primary-dark);
+
+      transform: translateY(-1px);
+    }
+
+    .submit-btn:disabled {
+      background: #b5bab2;
+
+      cursor: not-allowed;
+
+      transform: none;
+    }
+
+    .clear-btn {
+      width: 100%;
+
+      border:
+        1px solid #d9ded5;
+
+      background: white;
+
+      color: #555d52;
+
+      padding: 12px;
+
+      border-radius: 12px;
+
+      margin-top: 12px;
+
+      font-weight: 700;
+    }
+
+    .clear-btn:hover {
+      border-color: var(--primary);
+
+      color: var(--primary);
+    }
+
+
+    /* =========================================================
+       WHATSAPP BUTTON
+    ========================================================= */
+
+    .whatsapp-btn {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      width: 100%;
+
+      margin-top: 12px;
+
+      padding: 14px;
+
+      border-radius: 12px;
+
+      background: #1f9d55;
+
+      color: white;
+
+      font-weight: 800;
+
+      border: none;
+    }
+
+    .whatsapp-btn:hover {
+      background: #188346;
+    }
+
+
+    /* =========================================================
+       DELIVERY NOTE
+    ========================================================= */
+
+    .delivery-note {
+      margin-top: 15px;
+
+      padding: 14px;
+
+      background: #f8f4f2;
+
+      border-radius: 12px;
+
+      font-size: 13px;
+
+      color: #666c63;
+    }
+
+
+    /* =========================================================
+       SUCCESS MESSAGE
+    ========================================================= */
+
+    .success-message {
+      display: none;
+
+      background: #e8f5e9;
+
+      color: #245b2a;
+
+      border:
+        1px solid #b8dbbd;
+
+      padding: 14px;
+
+      border-radius: 12px;
+
+      margin-bottom: 20px;
+
+      font-size: 14px;
+
+      font-weight: 600;
+    }
+
+
+    /* =========================================================
+       SOUND BUTTON
+    ========================================================= */
+
+    .sound-button {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      z-index: 2000;
+
+      width: 52px;
+      height: 52px;
+
+      border: none;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+
+      color: white;
+
+      font-size: 21px;
+
+      box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.22);
+
+      transition: 0.2s ease;
+    }
+
+    .sound-button:hover {
+      transform: scale(1.06);
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    .footer {
+      background: var(--green);
+
+      color: white;
+
+      padding: 45px 0 25px;
+
+      text-align: center;
+
+      margin-top: 20px;
+    }
+
+    .footer-logo {
+      width: 65px;
+      height: 65px;
+
+      object-fit: contain;
+
+      margin:
+        0 auto 12px;
+
+      border-radius: 50%;
+    }
+
+    .footer h3 {
+      margin-bottom: 7px;
+
+      font-size: 20px;
+    }
+
+    .footer p {
+      color: #c6ccc3;
+
+      font-size: 14px;
+
+      margin-bottom: 20px;
+    }
+
+    .footer-contact {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 10px 25px;
+
+      margin-bottom: 25px;
+
+      font-size: 14px;
+    }
+
+    .footer-contact a:hover {
+      color: #f1c27d;
+    }
+
+    .powered {
+      border-top:
+        1px solid rgba(255, 255, 255, 0.12);
+
+      padding-top: 18px;
+
+      font-size: 13px;
+
+      color: #aeb6aa;
+    }
+
+    .powered strong {
+      color: white;
+    }
+
+
+    /* =========================================================
+       TABLET
+    ========================================================= */
+
+    @media (max-width: 1000px) {
+
+      .products-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .order-area {
+        grid-template-columns: 1fr;
+      }
+
+      .cart-card {
+        position: static;
+
+        order: -1;
+      }
+
+      .hero {
+        min-height: 420px;
+      }
+    }
+
+
+    /* =========================================================
+       IPAD / TABLET PORTRAIT
+    ========================================================= */
+
+    @media (max-width: 760px) {
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .nav-links {
+        gap: 10px;
+      }
+
+      .nav-links a:not(.nav-order) {
+        display: none;
+      }
+
+      .brand-text strong {
+        font-size: 16px;
+      }
+
+      .logo {
+        width: 48px;
+        height: 48px;
+      }
+
+      .hero {
+        min-height: 390px;
+      }
+
+      .hero-content {
+        padding: 55px 15px;
+      }
+
+      .products-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .product-image {
+        height: 210px;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 560px) {
+
+      .container {
+        width: min(94%, 500px);
+      }
+
+      .nav {
+        width: 94%;
+      }
+
+      .brand-text small {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+      }
+
+      .nav-order {
+        padding: 9px 13px;
+
+        font-size: 12px !important;
+      }
+
+      .hero {
+        min-height: 390px;
+      }
+
+      .hero-badge {
+        font-size: 10px;
+
+        letter-spacing: 1px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        max-width: 320px;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-btn {
+        width: 100%;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-image {
+        height: 245px;
+      }
+
+      .product-content {
+        padding: 20px;
+      }
+
+      .order-area {
+        gap: 18px;
+      }
+
+      .card {
+        padding: 20px;
+
+        border-radius: 16px;
+      }
+
+      .radio-group {
+        grid-template-columns: 1fr;
+      }
+
+      .info-box {
+        align-items: flex-start;
+
+        padding: 17px;
+      }
+
+      .sound-button {
+        right: 15px;
+
+        bottom: 15px;
+
+        width: 46px;
+        height: 46px;
+      }
+
+      .footer-contact {
+        flex-direction: column;
+
+        gap: 8px;
+      }
+    }
+
+
+    /* =========================================================
+       SMALL PHONES
+    ========================================================= */
+
+    @media (max-width: 380px) {
+
+      .brand-text {
+        display: none;
+      }
+
+      .logo {
+        width: 45px;
+        height: 45px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .section-title h2 {
+        font-size: 27px;
+      }
+
+      .product-image {
+        height: 220px;
+      }
+    }
+
+
+    /* =========================================================
+   RESPONSIVE DESIGN
+   UMMU AFNAN CHICKEN
+========================================================= */
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1400px+
+========================================================= */
+
+@media (min-width: 1400px) {
+
+  .container,
+  .nav {
+    width: min(1280px, 90%);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .product-image {
+    height: 250px;
+  }
+
+  .hero {
+    min-height: 560px;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+   1200px - 1399px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+  .container,
+  .nav {
+    width: 92%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .product-image {
+    height: 230px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   1001px - 1199px
+========================================================= */
+
+@media (min-width: 1001px) and (max-width: 1199px) {
+
+  .container,
+  .nav {
+    width: 93%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .product-image {
+    height: 210px;
+  }
+
+  .product-content {
+    padding: 18px;
+  }
+
+  .product-content h3 {
+    font-size: 19px;
+  }
+
+  .hero {
+    min-height: 450px;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .order-area {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET LANDSCAPE
+   900px - 1000px
+========================================================= */
+
+@media (min-width: 900px) and (max-width: 1000px) {
+
+  .container,
+  .nav {
+    width: 93%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .product-image {
+    height: 230px;
+  }
+
+  .order-area {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-card {
+    position: static;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET / IPAD
+   768px - 899px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+  .container,
+  .nav {
+    width: 92%;
+  }
+
+  .nav {
+    min-height: 72px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+
+  .product-content {
+    padding: 19px;
+  }
+
+  .product-content h3 {
+    font-size: 19px;
+  }
+
+  .hero {
+    min-height: 430px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .order-area {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-card {
+    position: static;
+    order: -1;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+}
+
+
+/* =========================================================
+   IPAD PORTRAIT
+   600px - 767px
+========================================================= */
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .nav {
+    width: 92%;
+    min-height: 68px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a:not(.nav-order) {
+    display: none;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+  }
+
+  .brand-text small {
+    font-size: 9px;
+  }
+
+  .hero {
+    min-height: 410px;
+  }
+
+  .hero-content {
+    padding: 55px 20px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .product-image {
+    height: 205px;
+  }
+
+  .product-content {
+    padding: 17px;
+  }
+
+  .product-content h3 {
+    font-size: 18px;
+  }
+
+  .product-description {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .quantity-box button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .order-area {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-card {
+    position: static;
+    order: -1;
+  }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   481px - 599px
+========================================================= */
+
+@media (min-width: 481px) and (max-width: 599px) {
+
+  .container {
+    width: 93%;
+  }
+
+  .nav {
+    width: 93%;
+    min-height: 66px;
+  }
+
+  .nav-links a:not(.nav-order) {
+    display: none;
+  }
+
+  .logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand-text strong {
+    font-size: 15px;
+  }
+
+  .brand-text small {
+    font-size: 8px;
+  }
+
+  .nav-order {
+    padding: 9px 14px;
+    font-size: 12px !important;
+  }
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero-content {
+    padding: 50px 15px;
+  }
+
+  .hero-badge {
+    font-size: 9px;
+    padding: 8px 12px;
+  }
+
+  .hero h1 {
+    font-size: 39px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 330px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-image {
+    height: 250px;
+  }
+
+  .product-content {
+    padding: 20px;
+  }
+
+  .order-area {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-card {
+    position: static;
+    order: -1;
+  }
+
+}
+
+
+/* =========================================================
+   NORMAL MOBILE
+   381px - 480px
+========================================================= */
+
+@media (min-width: 381px) and (max-width: 480px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .nav {
+    width: 94%;
+    min-height: 64px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .brand-text strong {
+    font-size: 14px;
+  }
+
+  .brand-text small {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-links a:not(.nav-order) {
+    display: none;
+  }
+
+  .nav-order {
+    padding: 8px 13px;
+
+    font-size: 11px !important;
+  }
+
+  .hero {
+    min-height: 420px;
+  }
+
+  .hero-content {
+    padding: 50px 12px;
+  }
+
+  .hero-badge {
+    font-size: 9px;
+    letter-spacing: 0.7px;
+    padding: 7px 11px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.08;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 310px;
+
+    margin: 25px auto 0;
+  }
+
+  .hero-btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-title {
+    margin-bottom: 28px;
+  }
+
+  .section-title h2 {
+    font-size: 29px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .info-box {
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    padding: 16px;
+
+    gap: 12px;
+  }
+
+  .info-icon {
+    width: 45px;
+    height: 45px;
+
+    font-size: 22px;
+  }
+
+  .info-box strong {
+    font-size: 15px;
+  }
+
+  .info-box p {
+    font-size: 12px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .product-card {
+    border-radius: 17px;
+  }
+
+  .product-image {
+    height: 245px;
+  }
+
+  .product-content {
+    padding: 18px;
+  }
+
+  .product-content h3 {
+    font-size: 20px;
+  }
+
+  .product-description {
+    font-size: 13px;
+
+    min-height: auto;
+  }
+
+  .price {
+    font-size: 21px;
+  }
+
+  .quantity-box {
+    padding: 6px;
+  }
+
+  .quantity-box button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .card {
+    padding: 19px;
+
+    border-radius: 17px;
+  }
+
+  .card h3 {
+    font-size: 21px;
+  }
+
+  .radio-group {
+    grid-template-columns: 1fr;
+  }
+
+  .order-area {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-card {
+    position: static;
+    order: -1;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   320px - 380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .container {
+    width: 94%;
+  }
+
+  .nav {
+    width: 94%;
+    min-height: 62px;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .logo {
+    width: 43px;
+    height: 43px;
+  }
+
+  .nav-order {
+    padding: 8px 12px;
+
+    font-size: 11px !important;
+  }
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero-content {
+    padding: 45px 10px;
+  }
+
+  .hero-badge {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+
+    padding: 7px 9px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    gap: 9px;
+  }
+
+  .hero-btn {
+    min-width: 0;
+
+    padding: 12px 15px;
+
+    font-size: 13px;
+  }
+
+  .section {
+    padding: 42px 0;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+  }
+
+  .info-box {
+    padding: 14px;
+
+    gap: 10px;
+  }
+
+  .info-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 19px;
+  }
+
+  .info-box strong {
+    font-size: 14px;
+  }
+
+  .info-box p {
+    font-size: 11px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+
+  .product-content {
+    padding: 16px;
+  }
+
+  .product-content h3 {
+    font-size: 18px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .price span {
+    font-size: 11px;
+  }
+
+  .quantity-box button {
+    width: 35px;
+    height: 35px;
+
+    font-size: 20px;
+  }
+
+  .quantity {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 19px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 11px 12px;
+
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 14px;
+
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 38px 0 20px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .sound-button {
+    width: 43px;
+    height: 43px;
+
+    right: 12px;
+    bottom: 12px;
+
+    font-size: 18px;
+  }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+   PHONE TURNED SIDEWAYS
+========================================================= */
+
+@media
+  (max-height: 500px)
+  and (orientation: landscape)
+  and (max-width: 900px) {
+
+  .nav {
+    min-height: 60px;
+  }
+
+  .hero {
+    min-height: 430px;
+  }
+
+  .hero-content {
+    padding: 35px 15px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    max-width: 600px;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .hero-btn {
+    width: auto;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  .product-card:hover {
+    transform: none;
+
+    box-shadow: var(--shadow);
+  }
+
+  .product-card:hover
+  .product-image img {
+    transform: none;
+  }
+
+  .quantity-box button {
+    min-width: 42px;
+    min-height: 42px;
+  }
+
+  .hero-btn,
+  .nav-order,
+  .submit-btn,
+  .whatsapp-btn {
+    min-height: 44px;
+  }
+
+}
+
+
+/* =========================================================
+   PREVENT HORIZONTAL SCROLLING
+========================================================= */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   RESPONSIVE IMAGES
+========================================================= */
+
+.product-image img {
+  max-width: none;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(123, 36, 28, 0.25);
+
+  outline-offset: 2px;
+}
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- ========================================================
+       HEADER
+  ========================================================= -->
+
+  <header class="header">
+
+    <div class="nav">
+
+      <a href="index.html" class="brand">
+
+        <img
+          src="logo.png"
+          alt="UMMU AFNAN Chicken Logo"
+          class="logo"
+        >
+
+        <span class="brand-text">
+
+          <strong>UMMU AFNAN</strong>
+
+          <small>CHICKEN</small>
+
+        </span>
+
+      </a>
+
+
+      <nav class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="#chickens">
+          Chickens
+        </a>
+
+        <a href="#order">
+          Order
+        </a>
+
+        <a
+          href="tel:+2348038286299"
+          class="nav-order"
+        >
+          Call Us
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ========================================================
+       HERO
+  ========================================================= -->
+
+  <section
+    class="hero"
+    id="home"
+  >
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        LIVE CHICKENS • QUALITY BIRDS • GOMBE
+      </div>
+
+      <h1>
+        Quality <span>Live Chicken</span>
+        You Can Trust
+      </h1>
+
+      <p>
+        Healthy live chickens available for families,
+        individuals, farmers, events and bulk buyers.
+        Choose your chicken and place your order today.
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="#chickens"
+          class="hero-btn hero-btn-primary"
+        >
+          View Our Chickens
+        </a>
+
+        <a
+          href="https://wa.me/2348038286299"
+          target="_blank"
+          class="hero-btn hero-btn-secondary"
+        >
+          Order on WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================================
+       CHICKENS
+  ========================================================= -->
+
+  <main>
+
+    <section
+      class="section"
+      id="chickens"
+    >
+
+      <div class="container">
+
+
+        <div class="section-title">
+
+          <small>
+            Our Chickens
+          </small>
+
+          <h2>
+            Choose Your Live Chicken
+          </h2>
+
+          <p>
+            Select the type and quantity of live chickens
+            you need. Your selected birds will appear in
+            your order summary below.
+          </p>
+
+        </div>
+
+
+
+        <!-- NOTICE -->
+
+        <div class="info-box">
+
+          <div class="info-icon">
+            🐔
+          </div>
+
+          <div>
+
+            <strong>
+              Live Chicken Only
+            </strong>
+
+            <p>
+              UMMU AFNAN Chicken sells live chickens.
+              We do not sell cooked chicken or prepared meals.
+              Availability may change depending on current stock.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT GRID -->
+
+        <div class="products-grid">
+
+
+          <!-- ==================================================
+               BROILER
+          ================================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="broiler Chicken.jpg"
+                alt="Live Broiler Chicken"
+                onerror="this.src='photo.jpg'"
+              >
+
+              <div class="product-badge">
+                AVAILABLE
+              </div>
+
+            </div>
+
+
+            <div class="product-content">
+
+              <h3>
+                Live Broiler Chicken
+              </h3>
+
+              <p class="product-description">
+                Healthy live broiler chickens suitable
+                for families, events and bulk purchases.
+              </p>
+
+              <div class="price">
+                ₦8,000
+                <span>per bird</span>
+              </div>
+
+
+              <div class="quantity-box">
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('broiler', -1)"
+                  aria-label="Decrease broiler quantity"
+                >
+                  −
+                </button>
+
+                <span
+                  class="quantity"
+                  id="qty-broiler"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('broiler', 1)"
+                  aria-label="Increase broiler quantity"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               LAYER
+          ================================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="layer Chicken.jpg"
+                alt="Live Layer Chicken"
+                onerror="this.src='photo.jpg'"
+              >
+
+              <div class="product-badge">
+                AVAILABLE
+              </div>
+
+            </div>
+
+
+            <div class="product-content">
+
+              <h3>
+                Live Layer Chicken
+              </h3>
+
+              <p class="product-description">
+                Quality live layer chickens for customers
+                looking for healthy and reliable birds.
+              </p>
+
+              <div class="price">
+                ₦7,500
+                <span>per bird</span>
+              </div>
+
+
+              <div class="quantity-box">
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('layer', -1)"
+                  aria-label="Decrease layer quantity"
+                >
+                  −
+                </button>
+
+                <span
+                  class="quantity"
+                  id="qty-layer"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('layer', 1)"
+                  aria-label="Increase layer quantity"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               COCKEREL
+          ================================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="cockerel.jpg"
+                alt="Live Cockerel"
+                onerror="this.src='photo.jpg'"
+              >
+
+              <div class="product-badge">
+                AVAILABLE
+              </div>
+
+            </div>
+
+
+            <div class="product-content">
+
+              <h3>
+                Live Cockerel
+              </h3>
+
+              <p class="product-description">
+                Healthy live cockerels available for
+                individual customers and bulk buyers.
+              </p>
+
+              <div class="price">
+                ₦8,000
+                <span>per bird</span>
+              </div>
+
+
+              <div class="quantity-box">
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('cockerel', -1)"
+                  aria-label="Decrease cockerel quantity"
+                >
+                  −
+                </button>
+
+                <span
+                  class="quantity"
+                  id="qty-cockerel"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('cockerel', 1)"
+                  aria-label="Increase cockerel quantity"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               LOCAL
+          ================================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="local Chicken.jpg"
+                alt="Live Local Chicken"
+                onerror="this.src='photo.jpg'"
+              >
+
+              <div class="product-badge">
+                LOCAL BREED
+              </div>
+
+            </div>
+
+
+            <div class="product-content">
+
+              <h3>
+                Live Local Chicken
+              </h3>
+
+              <p class="product-description">
+                Healthy live local chickens available
+                for customers who prefer local breeds.
+              </p>
+
+              <div class="price">
+                ₦9,000
+                <span>per bird</span>
+              </div>
+
+
+              <div class="quantity-box">
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('local', -1)"
+                  aria-label="Decrease local chicken quantity"
+                >
+                  −
+                </button>
+
+                <span
+                  class="quantity"
+                  id="qty-local"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('local', 1)"
+                  aria-label="Increase local chicken quantity"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               YOUNG
+          ================================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="young Chicken.jpg"
+                alt="Live Young Chicken"
+                onerror="this.src='photo.jpg'"
+              >
+
+              <div class="product-badge">
+                YOUNG BIRDS
+              </div>
+
+            </div>
+
+
+            <div class="product-content">
+
+              <h3>
+                Live Young Chicken
+              </h3>
+
+              <p class="product-description">
+                Young live chickens available depending
+                on current stock and availability.
+              </p>
+
+              <div class="price">
+                ₦2000
+                <span>per bird</span>
+              </div>
+
+
+              <div class="quantity-box">
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('young', -1)"
+                  aria-label="Decrease young chicken quantity"
+                >
+                  −
+                </button>
+
+                <span
+                  class="quantity"
+                  id="qty-young"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('young', 1)"
+                  aria-label="Increase young chicken quantity"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               CUSTOM ORDER
+          ================================================== -->
+
+          <article class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="Cockerel.jpg"
+                alt="Custom Live Chicken Order"
+              >
+
+              <div class="product-badge">
+                CUSTOM ORDER
+              </div>
+
+            </div>
+
+
+            <div class="product-content">
+
+              <h3>
+                Custom Live Chicken Order
+              </h3>
+
+              <p class="product-description">
+                Need a different type, size or larger
+                quantity? Contact us to confirm availability
+                and current price.
+              </p>
+
+              <div class="price">
+                Contact Us
+              </div>
+
+
+              <div class="quantity-box">
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('custom', -1)"
+                  aria-label="Decrease custom order quantity"
+                >
+                  −
+                </button>
+
+                <span
+                  class="quantity"
+                  id="qty-custom"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  onclick="changeQuantity('custom', 1)"
+                  aria-label="Increase custom order quantity"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         ORDER SECTION
+    ========================================================= -->
+
+    <section
+      class="section"
+      id="order"
+    >
+
+      <div class="container">
+
+
+        <div class="section-title">
+
+          <small>
+            Place Your Order
+          </small>
+
+          <h2>
+            Complete Your Order
+          </h2>
+
+          <p>
+            Select your chickens, enter your details,
+            and send your order directly through WhatsApp.
+          </p>
+
+        </div>
+
+
+
+        <div class="order-area">
+
+
+          <!-- ==================================================
+               ORDER FORM
+          ================================================== -->
+
+          <div class="card">
+
+            <div
+              class="success-message"
+              id="successMessage"
+            >
+              Your order is ready. We will open WhatsApp
+              so you can send your order to UMMU AFNAN Chicken.
+            </div>
+
+
+            <h3>
+              Customer Information
+            </h3>
+
+
+            <form
+              id="orderForm"
+              onsubmit="submitOrder(event)"
+            >
+
+
+              <div class="form-group">
+
+                <label for="customerName">
+                  Full Name
+                </label>
+
+                <input
+                  type="text"
+                  id="customerName"
+                  placeholder="Enter your full name"
+                  required
+                >
+
+              </div>
+
+
+
+              <div class="form-group">
+
+                <label for="customerPhone">
+                  Phone Number
+                </label>
+
+                <input
+                  type="tel"
+                  id="customerPhone"
+                  placeholder="e.g. 0803 828 6299"
+                  required
+                >
+
+              </div>
+
+
+
+              <div class="form-group">
+
+                <label>
+                  Order Method
+                </label>
+
+
+                <div class="radio-group">
+
+                  <div class="radio-option">
+
+                    <input
+                      type="radio"
+                      id="delivery"
+                      name="orderMethod"
+                      value="Delivery"
+                      checked
+                    >
+
+                    <label for="delivery">
+                      🚚 Delivery
+                    </label>
+
+                  </div>
+
+
+                  <div class="radio-option">
+
+                    <input
+                      type="radio"
+                      id="pickup"
+                      name="orderMethod"
+                      value="Pickup"
+                    >
+
+                    <label for="pickup">
+                      📍 Pickup
+                    </label>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <div
+                class="form-group"
+                id="addressGroup"
+              >
+
+                <label for="customerAddress">
+                  Delivery Address
+                </label>
+
+                <textarea
+                  id="customerAddress"
+                  placeholder="Enter your delivery address"
+                ></textarea>
+
+              </div>
+
+
+
+              <div class="form-group">
+
+                <label for="customerNote">
+                  Additional Note
+                </label>
+
+                <textarea
+                  id="customerNote"
+                  placeholder="Any special request or additional information?"
+                ></textarea>
+
+              </div>
+
+
+
+              <button
+                type="submit"
+                class="submit-btn"
+                id="submitButton"
+              >
+                Send Order on WhatsApp
+              </button>
+
+
+              <button
+                type="button"
+                class="clear-btn"
+                onclick="clearCart()"
+              >
+                Clear Selected Chickens
+              </button>
+
+
+              <div class="delivery-note">
+
+                <strong>
+                  Important:
+                </strong>
+
+                Prices shown are per live bird.
+                Please confirm availability and current
+                prices before final payment.
+
+              </div>
+
+            </form>
+
+          </div>
+
+
+
+          <!-- ==================================================
+               CART
+          ================================================== -->
+
+          <div class="card cart-card">
+
+            <h3>
+              Your Order
+            </h3>
+
+
+            <div id="cartItems">
+
+              <div class="cart-empty">
+
+                <div class="cart-empty-icon">
+                  🐔
+                </div>
+
+                <p>
+                  No chickens selected yet.
+                </p>
+
+                <p>
+                  Click the + button to add chickens.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div id="cartSummary">
+
+              <div class="summary-row">
+
+                <span>
+                  Total Birds
+                </span>
+
+                <strong id="totalBirds">
+                  0
+                </strong>
+
+              </div>
+
+
+              <div class="summary-row total">
+
+                <span>
+                  Estimated Total
+                </span>
+
+                <strong id="grandTotal">
+                  ₦0
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <a
+              href="https://wa.me/2348038286299"
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              💬 Contact Us on WhatsApp
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <img
+        src="logo.png"
+        alt="UMMU AFNAN Chicken"
+        class="footer-logo"
+      >
+
+
+      <h3>
+        UMMU AFNAN Chicken
+      </h3>
+
+
+      <p>
+        Quality Live Chickens • Trusted Service
+      </p>
+
+
+      <div class="footer-contact">
+
+        <a href="tel:+2348038286299">
+          📞 +234 803 828 6299
+        </a>
+
+        <a href="mailto:maryambashir647@gmail.com">
+          ✉️ maryambashir647@gmail.com
+        </a>
+
+        <span>
+          📍 Gombe, Nigeria
+        </span>
+
+      </div>
+
+
+      <div class="powered">
+
+        Powered by
+        <strong>
+          Jada Creative Studio
+        </strong>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ========================================================
+       SOUND BUTTON
+  ========================================================= -->
+
+  <button
+    type="button"
+    class="sound-button"
+    id="soundButton"
+    onclick="toggleSound()"
+    aria-label="Toggle advertisement sound"
+  >
+    🔊
+  </button>
+
+
+  <audio
+    id="advertisementAudio"
+    src="advertisement.mp3"
+    preload="auto"
+  ></audio>
+
+
+
+  <!-- ========================================================
+       JAVASCRIPT
+  ========================================================= -->
+
+  <script>
+
+    /* ========================================================
+       PRODUCT DATA
+    ======================================================== */
+
+    const products = {
+
+      broiler: {
+        name: "Live Broiler Chicken",
+        price: 8000
+      },
+
+      layer: {
+        name: "Live Layer Chicken",
+        price: 7500
+      },
+
+      cockerel: {
+        name: "Live Cockerel",
+        price: 7000
+      },
+
+      local: {
+        name: "Live Local Chicken",
+        price: 9000
+      },
+
+      young: {
+        name: "Live Young Chicken",
+        price: 6000
+      },
+
+      custom: {
+        name: "Custom Live Chicken Order",
+        price: 0
+      }
+
+    };
+
+
+    /* ========================================================
+       QUANTITIES
+    ======================================================== */
+
+    const quantities = {
+
+      broiler: 0,
+      layer: 0,
+      cockerel: 0,
+      local: 0,
+      young: 0,
+      custom: 0
+
+    };
+
+
+    /* ========================================================
+       CHANGE QUANTITY
+    ======================================================== */
+
+    function changeQuantity(productId, amount) {
+
+      if (!quantities.hasOwnProperty(productId)) {
+        return;
+      }
+
+
+      quantities[productId] += amount;
+
+
+      if (quantities[productId] < 0) {
+        quantities[productId] = 0;
+      }
+
+
+      const quantityElement =
+        document.getElementById(
+          "qty-" + productId
+        );
+
+
+      if (quantityElement) {
+
+        quantityElement.textContent =
+          quantities[productId];
+
+      }
+
+
+      updateCart();
+
+    }
+
+
+    /* ========================================================
+       FORMAT MONEY
+    ======================================================== */
+
+    function formatMoney(amount) {
+
+      return "₦" +
+        Number(amount).toLocaleString(
+          "en-NG"
+        );
+
+    }
+
+
+    /* ========================================================
+       UPDATE CART
+    ======================================================== */
+
+    function updateCart() {
+
+      const cartItems =
+        document.getElementById(
+          "cartItems"
+        );
+
+      const totalBirdsElement =
+        document.getElementById(
+          "totalBirds"
+        );
+
+      const grandTotalElement =
+        document.getElementById(
+          "grandTotal"
+        );
+
+
+      let totalBirds = 0;
+      let grandTotal = 0;
+
+
+      let html = "";
+
+
+      Object.keys(products).forEach(
+        function(productId) {
+
+          const quantity =
+            quantities[productId];
+
+          if (quantity <= 0) {
+            return;
+          }
+
+
+          const product =
+            products[productId];
+
+
+          totalBirds += quantity;
+
+
+          const itemTotal =
+            product.price * quantity;
+
+
+          grandTotal += itemTotal;
+
+
+          html += `
+
+            <div class="cart-item">
+
+              <div>
+
+                <div class="cart-item-name">
+                  ${product.name}
+                </div>
+
+                <div class="cart-item-details">
+
+                  ${quantity} bird${quantity > 1 ? "s" : ""}
+
+                  ${
+                    product.price > 0
+                    ? " × " + formatMoney(product.price)
+                    : " • Price to be confirmed"
+                  }
+
+                </div>
+
+              </div>
+
+
+              <div class="cart-item-price">
+
+                ${
+                  product.price > 0
+                  ? formatMoney(itemTotal)
+                  : "Contact"
+                }
+
+              </div>
+
+            </div>
+
+          `;
+
+        }
+      );
+
+
+      if (!html) {
+
+        html = `
+
+          <div class="cart-empty">
+
+            <div class="cart-empty-icon">
+              🐔
+            </div>
+
+            <p>
+              No chickens selected yet.
+            </p>
+
+            <p>
+              Click the + button to add chickens.
+            </p>
+
+          </div>
+
+        `;
+
+      }
+
+
+      cartItems.innerHTML = html;
+
+
+      totalBirdsElement.textContent =
+        totalBirds;
+
+
+      grandTotalElement.textContent =
+        formatMoney(grandTotal);
+
+    }
+
+
+    /* ========================================================
+       CLEAR CART
+    ======================================================== */
+
+    function clearCart() {
+
+      Object.keys(quantities).forEach(
+        function(productId) {
+
+          quantities[productId] = 0;
+
+
+          const element =
+            document.getElementById(
+              "qty-" + productId
+            );
+
+
+          if (element) {
+
+            element.textContent = "0";
+
+          }
+
+        }
+      );
+
+
+      updateCart();
+
+    }
+
+
+    /* ========================================================
+       DELIVERY / PICKUP
+    ======================================================== */
+
+    const deliveryRadio =
+      document.getElementById(
+        "delivery"
+      );
+
+    const pickupRadio =
+      document.getElementById(
+        "pickup"
+      );
+
+    const addressGroup =
+      document.getElementById(
+        "addressGroup"
+      );
+
+    const customerAddress =
+      document.getElementById(
+        "customerAddress"
+      );
+
+
+    function updateAddressVisibility() {
+
+      if (deliveryRadio.checked) {
+
+        addressGroup.style.display =
+          "block";
+
+        customerAddress.required =
+          true;
+
+      } else {
+
+        addressGroup.style.display =
+          "none";
+
+        customerAddress.required =
+          false;
+
+      }
+
+    }
+
+
+    deliveryRadio.addEventListener(
+      "change",
+      updateAddressVisibility
+    );
+
+    pickupRadio.addEventListener(
+      "change",
+      updateAddressVisibility
+    );
+
+
+    updateAddressVisibility();
+
+
+    /* ========================================================
+       SUBMIT ORDER
+    ======================================================== */
+
+    function submitOrder(event) {
+
+      event.preventDefault();
+
+
+      let hasOrder = false;
+
+
+      Object.keys(quantities).forEach(
+        function(productId) {
+
+          if (quantities[productId] > 0) {
+
+            hasOrder = true;
+
+          }
+
+        }
+      );
+
+
+      if (!hasOrder) {
+
+        alert(
+          "Please select at least one live chicken before placing your order."
+        );
+
+        document
+          .getElementById("chickens")
+          .scrollIntoView({
+            behavior: "smooth"
+          });
+
+        return;
+
+      }
+
+
+      const customerName =
+        document
+          .getElementById(
+            "customerName"
+          )
+          .value.trim();
+
+
+      const customerPhone =
+        document
+          .getElementById(
+            "customerPhone"
+          )
+          .value.trim();
+
+
+      const customerAddress =
+        document
+          .getElementById(
+            "customerAddress"
+          )
+          .value.trim();
+
+
+      const customerNote =
+        document
+          .getElementById(
+            "customerNote"
+          )
+          .value.trim();
+
+
+      const orderMethod =
+        document.querySelector(
+          'input[name="orderMethod"]:checked'
+        ).value;
+
+
+      let totalBirds = 0;
+
+      let totalAmount = 0;
+
+
+      let message =
+        "🐔 *NEW ORDER - UMMU AFNAN CHICKEN*";
+
+      message +=
+        "\n\n";
+
+
+      message +=
+        "*Customer Information*";
+
+      message +=
+        "\nName: " +
+        customerName;
+
+      message +=
+        "\nPhone: " +
+        customerPhone;
+
+
+      message +=
+        "\nOrder Method: " +
+        orderMethod;
+
+
+      if (
+        orderMethod === "Delivery"
+      ) {
+
+        message +=
+          "\nDelivery Address: " +
+          customerAddress;
+
+      }
+
+
+      message +=
+        "\n\n";
+
+
+      message +=
+        "*Chicken Order*";
+
+      message +=
+        "\n";
+
+
+      Object.keys(products).forEach(
+        function(productId) {
+
+          const quantity =
+            quantities[productId];
+
+
+          if (quantity <= 0) {
+            return;
+          }
+
+
+          const product =
+            products[productId];
+
+
+          totalBirds += quantity;
+
+
+          if (product.price > 0) {
+
+            const itemTotal =
+              product.price *
+              quantity;
+
+
+            totalAmount +=
+              itemTotal;
+
+
+            message +=
+              "\n• " +
+              product.name +
+              " × " +
+              quantity +
+              " = " +
+              formatMoney(itemTotal);
+
+          } else {
+
+            message +=
+              "\n• " +
+              product.name +
+              " × " +
+              quantity +
+              " = Price to be confirmed";
+
+          }
+
+        }
+      );
+
+
+      message +=
+        "\n\nTotal Birds: " +
+        totalBirds;
+
+
+      message +=
+        "\nEstimated Total: " +
+        formatMoney(totalAmount);
+
+
+      if (customerNote) {
+
+        message +=
+          "\n\nAdditional Note: " +
+          customerNote;
+
+      }
+
+
+      message +=
+        "\n\nPlease confirm availability and final price. Thank you.";
+
+
+      const whatsappNumber =
+        "2348038286299";
+
+
+      const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+      const successMessage =
+        document.getElementById(
+          "successMessage"
+        );
+
+
+      successMessage.style.display =
+        "block";
+
+
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
+
+    }
+
+
+    /* ========================================================
+       ADVERTISEMENT SOUND
+    ======================================================== */
+
+    const audio =
+      document.getElementById(
+        "advertisementAudio"
+      );
+
+    const soundButton =
+      document.getElementById(
+        "soundButton"
+      );
+
+
+    let soundStarted = false;
+
+
+    function toggleSound() {
+
+      if (audio.paused) {
+
+        audio.play()
+          .then(function() {
+
+            soundStarted = true;
+
+            soundButton.textContent =
+              "🔊";
+
+          })
+          .catch(function() {
+
+            alert(
+              "Please interact with the page first before playing the advertisement."
+            );
+
+          });
+
+      } else {
+
+        audio.pause();
+
+        soundButton.textContent =
+          "🔇";
+
+      }
+
+    }
+
+
+    /* ========================================================
+       PLAY AUDIO AFTER USER INTERACTION
+    ======================================================== */
+
+    function startAdvertisement() {
+
+      if (soundStarted) {
+        return;
+      }
+
+
+      audio.play()
+        .then(function() {
+
+          soundStarted = true;
+
+          soundButton.textContent =
+            "🔊";
+
+        })
+        .catch(function() {
+
+          /* Browser blocked autoplay.
+             User can press sound button. */
+
+        });
+
+    }
+
+
+    document.addEventListener(
+      "click",
+      function(event) {
+
+        if (
+          event.target.closest(
+            ".sound-button"
+          )
+        ) {
+          return;
+        }
+
+        startAdvertisement();
+
+      },
+      {
+        once: true
+      }
+    );
+
+
+    /* ========================================================
+       INITIAL CART
+    ======================================================== */
+
+    updateCart();
+
+  </script>
+
+</body>
+</html>
